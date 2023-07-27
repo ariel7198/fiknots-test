@@ -1,0 +1,21 @@
+.hero{
+    background: linear-gradient(180deg, #FDD549, #fff);
+}
+.heroBg{
+    background: url('/hero-bg.png');
+    background-position: left top;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+.heroActions{
+    border-radius: 14px;
+}
+.btnWallet{
+    border: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
+.btnHero{
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
