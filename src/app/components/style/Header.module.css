@@ -1,3 +1,6 @@
+.headerContainer {
+    box-shadow: 0 5px 4px rgba(0,0,0,0.05);
+}
 .actionsContainer button{
     border: none;
     background-color: white !important;
