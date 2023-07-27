@@ -1,0 +1,8 @@
+.actionsContainer button{
+    border: none;
+    background-color: white !important;
+    border-radius: 100px;
+}
+.avatarContainer{
+    background-color: #FFD74A;
+}
