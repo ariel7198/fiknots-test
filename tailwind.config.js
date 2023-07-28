@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         'fiknots-yellow': '#FFC804',
         'fiknots-orange': '#FF6B00',
+        'fiknots-blue': '#17A4F3',
       },
     },
   },
