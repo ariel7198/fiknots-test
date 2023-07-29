@@ -16,7 +16,13 @@
     @apply text-blue-600 underline;
   }
 }
-
+.divider:before, .divider:after{
+  background: #888888;
+  height: 1px;
+}
+.divider:not(:empty) {
+  gap: 0;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
