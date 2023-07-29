@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Header () {
     return (
-        <div className={`${style.headerContainer} w-screen bg-white/60 flex justify-between items-center content-center z-50 fixed`}>
+        <header className={`${style.headerContainer} w-screen bg-white/60 flex justify-between items-center content-center z-50 fixed`}>
             <div className="flex min-w-[100vw] justify-between items-center text-sm pl-10">
                 <div className='flex items-center'>
                     <div>
@@ -16,16 +16,16 @@ export default function Header () {
                             priority
                             />
                         </div>
-                    <div className="">
+                    <nav>
                         <ul className="menu menu-horizontal">
                             <li className='font-medium text-lg'>
-                                <Link href="/jogs">Jobs</Link>
+                                <Link href="/jobs">Jobs</Link>
                             </li>
                             <li className='font-medium text-lg'>
                                 <Link href="/scholars">Scholars</Link>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
                 <div className='flex items-center'>
                 <div className={`${style.actionsContainer} flex`}>
@@ -76,6 +76,6 @@ export default function Header () {
                 </div>
                 
             </div>
-        </div>
+        </header>
     )
 }

@@ -212,14 +212,14 @@ export default function Home() {
                 <p className='text-black font-bold'> <span className='text-fiknots-orange'> Post </span> a Gaming Job </p>  
               </button>
           </div>
-          <div className='p-16'>
+          <footer className='p-16'>
             <Image 
               src="/fiknots.svg"
               alt="logo"
               height={400}
               width={200}
             />
-          </div>
+          </footer>
         </div>
         
 
