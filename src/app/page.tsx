@@ -11,15 +11,15 @@ export default function Home() {
         <div className={`${style.hero} flex flex-col justify-center w-screen`}>
           <div className={`${style.heroBg} flex flex-col justify-center w-screen items-center min-w-xl`}>
             <div className="container min-h-[100vh] flex flex-col justify-center items-center">
-              <div className='columns-2 min-h-[60vh] flex justify-center items-center content-center px-8'>
+              <div className='columns-2 min-h-[60vh] max-w-[80%] flex justify-center items-center content-center px-8'>
                 <div className='flex items-end content-center min-h-[300px] px-5'> 
-                  <h1 className='text-white	font-bold sm:text-3xl md:text-5xl lg:text-6xl'>
+                  <h1 className='text-white	font-bold sm:text-3xl md:text-4xl lg:text-5xl'>
                       Find NFT Game Scholarship or
                       Lend your Gaming NFT with FiKNOTS. 
                   </h1>
                 </div>
                 <div className='flex items-end px-5 min-h-[300px]'> 
-                  <h3 className='text-black font-bold md:text-base sm:text-sm'> FiKNOTS is a platform that allows gamers to find NFT Game Scholarship and various other GameFi gaming jobs; 
+                  <h3 className='text-black font-bold lg:text-lg sm:text-sm'> FiKNOTS is a platform that allows gamers to find NFT Game Scholarship and various other GameFi gaming jobs; 
                     as well as NFT owners to lend their NFT and offer Scholarships for a shared profit.
                   </h3>
                 </div>
@@ -32,21 +32,24 @@ export default function Home() {
                   height={160}
                 />
               </div>
-              <div className={`${style.heroActions} flex flex-col min-w-[70%] justify-center items-center min-h-[30vh] bg-white/90 m-5`}> 
+              <div className={`${style.heroActions} flex flex-col min-w-[80%] justify-center items-center min-h-[30vh] bg-white/90 m-5`}> 
                   <div>
-                    <button className={`${style.btnWallet} bg-fiknots-yellow btn-lg btn-wide rounded-full m-3`}> 
+                    <button className={`${style.btnWallet} bg-[#FFD74A] btn-lg btn-wide rounded-full m-3 min-w-[400px]`}> 
                       <p className='text-black font-bold'> Connect Wallet to Start </p>
                     </button>
                   </div>
                   <div>
-                    <button className={`${style.btnHero} btn-lg rounded-full m-3`}>
+                    <button className={`${style.btnHero} btn-lg rounded-full m-3 min-w-[300px]`}>
                       <p className='text-black font-bold'> <span className='text-fiknots-yellow'> Find </span> a Gaming Job </p>
                     </button>
-                    <button className={`${style.btnHero} btn-lg rounded-full m-3`}>
+                    <button className={`${style.btnHero} btn-lg rounded-full m-3 min-w-[300px]`}>
                       <p className='text-black font-bold'> <span className='text-fiknots-orange'> Post </span> a Gaming Job </p>  
                     </button>
                   </div>
                   
+              </div>
+              <div className="flex items-center content-center justify-center min-h-[200px]"> 
+                <h2 className='text-6xl font-bold'> Game Plan </h2> 
               </div>
             </div>
             
@@ -54,20 +57,18 @@ export default function Home() {
           
         </div>
         <div className={`${style.gamePlanContainer} min-w-screen min-h-screen`}>
-          <div className="flex items-center content-center justify-center "> 
-            <h2 className='text-4xl font-bold'> Game Plan </h2> 
-          </div>
-          <div className={`${style.infoContainer} min-h-screen py-16`}>
+          
+          <div className={`${style.infoContainer} min-h-screen flex flex-col flex-wrap justify-center py-16`}>
             <div className="flex items-center content-center justify-center"> 
                 <Image 
                   className='-mb-16 z-10'
                   src="/gameplan/jobs-before.svg"
                   alt="arrow-left"
-                  width={180}
+                  width={195}
                   height={200}
                 />
-                <div className={`${style.cardJobs} card bg-white p-4 flex flex-col items-center content-center justify-center`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#F6851B" className="w-14 h-14">
+                <div className={`${style.cardJobs} card bg-white p-4 px-8 flex flex-col items-center content-center justify-center`}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="#F6851B" className="w-14 h-14">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                   </svg>
 
@@ -77,7 +78,7 @@ export default function Home() {
                   className='-mb-16 z-10'
                   src="/gameplan/jobs-after.svg"
                   alt="arrow-right"
-                  width={180}
+                  width={195}
                   height={200}
                 />
               
@@ -112,7 +113,7 @@ export default function Home() {
                   </li>
                  </ul>
               </div>
-              <div className='flex flex-col justify-between min-h-[300px]'>
+              <div className='flex flex-col justify-between min-h-[320px]'>
                 <Image 
                   className='z-10'
                   src="/gameplan/scout-arrow.svg"
@@ -121,7 +122,7 @@ export default function Home() {
                   height={200}
                 />
                 <Image 
-                  className=' z-10'
+                  className='z-10 -mb-5'
                   src="/gameplan/build-trust-arrow.svg"
                   alt="arrow-right"
                   width={180}
@@ -158,12 +159,12 @@ export default function Home() {
                  </ul>
               </div>
             </div>
-            <p className='text-center text-sm font-bold'>Mutual Review, <br/> Verified User (Requires KYC) </p>
+            <p className='text-center text-sm font-bold mt-7'>Mutual Review, <br/> Verified User (Requires KYC) </p>
           </div>
         </div>
       </div>
       <div className={`${style.parametersContainer} w-screen flex flex-col items-center content-center`}>
-          <div> <h2 className='text-5xl font-bold'> Parameters </h2> </div>
+          <div> <h2 className='text-6xl font-bold my-[50px]'> Parameters </h2> </div>
           <div className="flex flex-row items-center content-center my-6">
             <ParameterCards 
               value="1.6"
@@ -188,28 +189,26 @@ export default function Home() {
               colorClass="text-fiknots-yellow"
             />
           </div>
-          <div className='container'> 
+          <div className="container p-8 max-w-[70%]">
             <div className="divider"> 
             </div>
-          </div>
-          <div className="container p-8">
-            <p className='text-2xl font-bold my-2'>GameFi Scholarship is more than just “renting” NFT to play game. <br/> 
+            <p className='text-3xl font-bold my-2 px-3'>GameFi Scholarship is more than just “renting” NFT to play game. <br/> 
               With the increasing popularity of GameFi, 
               creating a safe and sustainable gaming job market requires effective communication, coaching, 
               and trust, much like in real-life job market.</p>
-              <p className='text-3xl font-bold my-3'>And that is why we build FiKNOTS.</p>
+              <p className='text-4xl font-bold my-3 px-3'>And that is why we build FiKNOTS.</p>
               <div className="divider"> </div>
-              <p> Whether you are a solo player or a guild member, beginner or expert, everyone can instantly find a gaming job as a Scholar, 
+              <p className='px-3'> Whether you are a solo player or a guild member, beginner or expert, everyone can instantly find a gaming job as a Scholar, 
                 or post gaming job as a Manager just by connecting your wallet. <br/> 
 
                 Have fun playing games, 
                 earn crypto tokens, build communications and exchange ideas with other Scholars and Managers in a world-wide GameFi community.</p>
           </div>
           <div className="container flex items-center justify-center">
-              <button className={`${style.btnHero} btn-lg rounded-full m-3`}>
+              <button className={`${style.btnHero} btn-lg btn-wide rounded-full m-3`}>
                 <p className='text-black font-bold'> <span className='text-fiknots-yellow'> Find </span> a Gaming Job </p>
               </button>
-              <button className={`${style.btnHero} btn-lg rounded-full m-3`}>
+              <button className={`${style.btnHero} btn-lg btn-wide rounded-full m-3`}>
                 <p className='text-black font-bold'> <span className='text-fiknots-orange'> Post </span> a Gaming Job </p>  
               </button>
           </div>
